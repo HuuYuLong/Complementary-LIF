@@ -1,4 +1,4 @@
-# CLIF
+# CLIF: Complementary Leaky Integrate-and-Fire Neuron for Spiking Neural Networks (**[ICML2024](https://openreview.net/forum?id=yY6N89IlHa&referrer=%5BAuthor%20Console%5D(%2Fgroup%3Fid%3DICML.cc%2F2024%2FConference%2FAuthors%23your-submissions))**)
 
 ## Dependencies
 - Python 3
@@ -29,7 +29,7 @@ CIFAR-10, CIFAR-100, Tiny-Imagenet, DVS-CIFAR10, and DVS-Gesture:
 	# DVS-Gesture
     python train_BPTT.py -data_dir ./data_dir -dataset dvsgesture -model spiking_vgg11_bn -T 20 -b 16 -drop_rate 0.4  -neuron CLIF
 
-If changing neuron, you can change hyperparameters to ``LIF`` or ``PLIF`` directly after ``-neuron``.
+If you change the neuron, you can directly switch to ``LIF`` or ``PLIF`` by modifying the hyperparameters after ``-neuron``.
 
 For example to setup LIF neuron for CIFAR-10 task:
 
