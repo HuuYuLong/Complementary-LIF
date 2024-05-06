@@ -1,4 +1,4 @@
-# CLIF: Complementary Leaky Integrate-and-Fire Neuron for Spiking Neural Networks (**[ICML2024](https://openreview.net/forum?id=yY6N89IlHa&referrer=%5BAuthor%20Console%5D(%2Fgroup%3Fid%3DICML.cc%2F2024%2FConference%2FAuthors%23your-submissions))**)
+# CLIF: Complementary Leaky Integrate-and-Fire Neuron for Spiking Neural Networks (**[ICML2024](https://openreview.net/forum?id=yY6N89IlHa)**)
 
 ## Dependencies
 - Python 3
