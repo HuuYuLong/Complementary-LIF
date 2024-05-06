@@ -1,0 +1,59 @@
+# Cifar10
+python inference.py 
+-data_dir ./data_dir -dataset cifar10 -model spiking_resnet18 -neuron CLIF 
+-name without_auto_aug 
+-resume ./save_logs/logs_cifar10/BPTT_cifar10_spiking_resnet18__T6_tau2.0_e200_bs128_SGD_lr0.1_wd5e-05_SG_rectangle_drop0.0_losslamb0.05_LTLIF_CosALR_200_amp/checkpoint_max.pth
+
+python inference.py 
+-data_dir ./data_dir -dataset cifar10 -model spiking_resnet18 -neuron LIF 
+-name without_auto_aug 
+-resume ./save_logs/logs_cifar10/BPTT_cifar10_spiking_resnet18__T6_tau2.0_e200_bs128_SGD_lr0.1_wd5e-05_SG_rectangle_drop0.0_losslamb0.05_CosALR_200_amp/checkpoint_max.pth
+
+
+# Cifar100
+python inference.py 
+-data_dir ./data_dir -dataset cifar100 -model spiking_resnet18 -neuron CLIF 
+-name without_auto_aug 
+-resume ./save_logs/logs_cifar100/BPTT_cifar100_spiking_resnet18__T6_tau2.0_e200_bs128_SGD_lr0.1_wd0.0005_SG_rectangle_drop0.0_losslamb0.05_LTLIF_CosALR_200_amp/checkpoint_max.pth
+
+python inference.py 
+-data_dir ./data_dir -dataset cifar100 -model spiking_resnet18 -neuron LIF 
+-name without_auto_aug 
+-resume ./save_logs/logs_cifar100/BPTT_cifar100_spiking_resnet18__T6_tau2.0_e200_bs128_SGD_lr0.1_wd0.0005_SG_rectangle_drop0.0_losslamb0.05_CosALR_200_amp/checkpoint_max.pth
+
+
+# TinyImagenet
+python inference.py 
+-data_dir ./data_dir -dataset tiny_imagenet -model spiking_vgg13_bn -b 256 -neuron CLIF 
+-name without_auto_aug 
+-resume ./save_logs/logs_tiny_imagenet/without_auto_aug/test_t_BPTT_tiny_imagenet_spiking_vgg13_bn__T6_tau2.0_e200_bs256_SGD_lr0.1_wd0.0001_SG_rectangle_drop0.0_losslamb0.05_LTLIF_CosALR_200_amp/checkpoint_max.pth
+
+python inference.py 
+-data_dir ./data_dir -dataset tiny_imagenet -model spiking_vgg13_bn -b 256 -neuron LIF 
+-name without_aug 
+-resume ./save_logs/logs_tiny_imagenet/without_auto_aug/test_t_BPTT_tiny_imagenet_spiking_vgg13_bn__T6_tau2.0_e200_bs256_SGD_lr0.1_wd0.0001_SG_rectangle_drop0.0_losslamb0.05CosALR_200_amp/checkpoint_max.pth
+
+
+# DVSCifar
+python inference.py 
+-data_dir ./data_dir -dataset DVSCIFAR10 -model spiking_vgg11_bn -T 10 -neuron CLIF 
+-name without_auto_aug 
+-resume ./save_logs/logs_dvscifar/BPTT_DVSCIFAR10_spiking_vgg11_bn__T10_tau2.0_e300_bs128_SGD_lr0.05_wd0.0005_SG_rectangle_drop0.3_losslamb0.05_LTLIF_CosALR_300_amp/checkpoint_max.pth
+
+python inference.py 
+-data_dir ./data_dir -dataset DVSCIFAR10 -model spiking_vgg11_bn -T 10 -neuron LIF 
+-name without_auto_aug 
+-resume ./save_logs/logs_dvscifar/BPTT_DVSCIFAR10_spiking_vgg11_bn__T10_tau2.0_e300_bs128_SGD_lr0.05_wd0.0005_SG_rectangle_drop0.3_losslamb0.05_CosALR_300_amp/checkpoint_max.pth
+
+
+# DVSGesture
+python inference.py `
+-data_dir ./data_dir -dataset dvsgesture -model spiking_vgg11_bn -T 20 -b 16 -neuron CLIF `
+-name without_auto_aug `
+-resume ./save_logs/logs_dvsgesture/BPTT_dvsgesture_spiking_vgg11_bn__T20_tau2.0_e300_bs16_SGD_lr0.1_wd0.0005_SG_rectangle_drop0.4_losslamb0.05_LTLIF_CosALR_300_amp/checkpoint_max.pth
+
+python inference.py `
+-data_dir ./data_dir -dataset dvsgesture -model spiking_vgg11_bn -T 20 -b 16 -neuron LIF `
+-name without_auto_aug `
+-resume ./save_logs/logs_dvsgesture/BPTT_dvsgesture_spiking_vgg11_bn__T20_tau2.0_e300_bs16_SGD_lr0.1_wd0.0005_SG_rectangle_drop0.4_losslamb0.05CosALR_300_amp/checkpoint_max.pth
+
