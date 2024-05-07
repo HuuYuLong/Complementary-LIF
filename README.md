@@ -1,4 +1,4 @@
-# CLIF: Complementary Leaky Integrate-and-Fire Neuron for Spiking Neural Networks (**[ICML2024](https://arxiv.org/pdf/2402.04663)**)
+# CLIF: Complementary Leaky Integrate-and-Fire Neuron for Spiking Neural Networks (**[ICML 2024](https://arxiv.org/pdf/2402.04663)**)
 
 (This repository is updating......)
 
