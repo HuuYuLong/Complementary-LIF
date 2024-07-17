@@ -1,6 +1,5 @@
 # CLIF: Complementary Leaky Integrate-and-Fire Neuron for Spiking Neural Networks (**[ICML 2024](https://openreview.net/pdf?id=yY6N89IlHa)**)
 
-(This repository is updating......)
 
 Commonly used LIF neurons suffer from the vanishing gradient problem in the temporal dimension. This work propose the Complementary Leaky Integrate-and-Fire (CLIF) Neuron without (hyper)parameters. CLIF creates extra paths to facilitate the backpropagation in computing temporal gradient while keeping binary output.
 
@@ -63,3 +62,6 @@ For example to setup LIF neuron for CIFAR-10 task:
 
 ## Inference
 The inference setup could refer file: ``run_inference_script``
+
+## Acknowlegement
+The code for data preprocessing is based on the [spikingjelly](https://github.com/fangwei123456/spikingjelly) repo. This repository is mainly modified from [this repo](https://github.com/qymeng94/SLTT).
