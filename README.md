@@ -15,6 +15,7 @@ _Table. Directly convert the pre-trained CLIF/LIF model to an LIF neuron for inf
 | CLIF pretrained (**95.41%**) | 92.95%     | 93.41%     | 94.18% | 94.54% | **95.08%** | 94.84% | 94.72%  |
 | LIF pretrained (**94.51%**)  | 94.51%     | 84.05%     | 76.68% | 66.08% | 52.16% | 38.00% | 27.04%  |
 |                          |            |            |        |        |        |        |         |
+|                          |            |            |        |        |        |        |         |
 | **CIFAR100**                 | **Soft Reset** | **Hard Reset** |        |        |        |        |         |
 | Reset Value              | None       | 0          | -0.02  | -0.04  | -0.06  | -0.08  | -0.1    |
 | CLIF pretrained (**78.36%**) | 68.72%     | 73.04%     | 74.64% | 76.63% | 76.55% | **77.00%** | 76.54%  |
