@@ -68,7 +68,7 @@ The inference setup could refer file: ``run_inference_script``
 The code for data preprocessing is based on the [spikingjelly](https://github.com/fangwei123456/spikingjelly) repo. This repository is mainly modified from [this repo](https://github.com/qymeng94/SLTT).
 
 ## Citation
-Hope this repository helpful for you:
+Hope this repository is helpful for you:
 ```bib
 @inproceedings{huang2024clif,
   title={CLIF: Complementary Leaky Integrate-and-Fire Neuron for Spiking Neural Networks},
